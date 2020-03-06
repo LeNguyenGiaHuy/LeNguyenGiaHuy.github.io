@@ -2,7 +2,7 @@ let express = require('express');
 let app=express();
 
 //Cau hinh
-
+app.use(express.static(__dirname + '/public'));
 
 
 
