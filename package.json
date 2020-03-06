@@ -1,0 +1,14 @@
+{
+  "name": "reop1",
+  "version": "1.0.0",
+  "description": "xay dung webside ban dep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gia Huy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
