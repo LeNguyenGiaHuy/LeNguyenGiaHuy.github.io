@@ -16,7 +16,10 @@ app.engine('hbs', hbs.engine);
 app.set('view engine','hbs');
 
 
-
+// define routes
+app.get('/',(req,res)=>{
+    res.render('index');
+});
 
 // set ser ver
 app.set('port', process.env.PORT || 5000);
