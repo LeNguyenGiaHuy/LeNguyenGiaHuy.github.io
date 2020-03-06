@@ -4,13 +4,16 @@ let app=express();
 //Cau hinh
 app.use(express.static(__dirname + '/public'));
 
-
-
-
-
-
-
-
+// use view engine 
+let expressHbs=require('express-handlebars');
+let hbs=expressHbs.create({
+    extname:'hbs',
+    defaultLayout:'layout',
+    layoutsDir:__dirname+ '/views/layouts/',
+    partialsDir:__dirname+'/views/partials/'
+});
+app.engine('hbs', hbs.engine);
+app.set('view engine','hbs');
 
 
 
