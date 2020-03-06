@@ -21,7 +21,17 @@ app.get('/',(req,res)=>{
     res.render('index');
 });
 
-// set ser ver
+app.get('/:page',(req,res)=>{
+let banners= {
+        category: 'Our Category',
+        single_product: 'Product Detail'
+    };
+    let page=req.params.page;
+    res.render(page, {banner: banners[page]});
+});
+
+
+// set server
 app.set('port', process.env.PORT || 5000);
 app. listen(app.get('port'), () => {
     console.log(`Server is running at port ${app.get('port')}`);
