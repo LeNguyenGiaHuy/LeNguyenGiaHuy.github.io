@@ -21,6 +21,7 @@ app.get('/',(req,res)=>{
     res.render('index');
 });
 
+// render 
 app.get('/:page',(req,res)=>{
 let banners= {
         category: 'Our Category',
